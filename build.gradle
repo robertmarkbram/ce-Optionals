@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'org.rmb'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+// JUnit 5 Tutorial: Running Unit Tests With Gradle
+// https://www.petrikainulainen.net/programming/testing/junit-5-tutorial-running-unit-tests-with-gradle/
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.4.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.4.2'
+}
+
+test {
+    useJUnitPlatform()
+}
